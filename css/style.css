@@ -251,23 +251,14 @@ nav{
 
 .outer-4{
     width: 100%;
-    position: relative;
-    height: 1000px;
-    padding: 0;
+    height: auto;
+    padding: 50px 150px 100px;
+    background: url(/images/triangle-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.svg-background{
-    color: #272727;
-    width: 100%;
-    z-index: 0;
-    position: absolute;
-    /* inset: 0; */
-}
 .inner-4-1{
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    padding-inline: 30px;
     inset: 0;
     display: grid;
     place-items: center;
@@ -288,6 +279,7 @@ nav{
     padding: 50px;
     margin-top: 50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
 }
 .contact-form1{
     width: 100%;
@@ -340,22 +332,118 @@ label{
     padding: 10px 30px;
 }
 
+.outer-5{
+    background-color: #272727;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px 0;
+}
+.location{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+.footer-links{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.faw{
+    color: white;
+    font-size: 28px;
+}
+.location-name, .footer-email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.location-name > h4, .footer-email > h5{
+    color: white;
+}
+.footer-icons{
+    display: flex;
+    gap: 10px;
+}
+
+
+.outer-6{
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100%;
+    height: auto;
+    padding: 150px;
+}
+.booking-form{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+}
+.booking-form1{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.booking-name-email{
+    flex: 50%;
+}
+.booking-button{
+    flex: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.booking-button > input{
+    background-color: #8F00FF;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: pop-reg;
+}
+label{
+    font-family: pop-reg;
+    font-size: 14px;
+}
+#fname, #lname, #iemail, #pword{
+    width: 100%;
+    height: 60px;
+    padding-inline: 20px;
+    font-family: pop-reg;
+    font-size: 13px;
+    margin-top: 10px;
+    outline: 0;
+    border: 1px solid #D4D4D4;
+}
+
+
+
 
 /* Media Queries */
 @media screen and (max-width: 850px) {
     .outer-2, .outer-3{
         padding-inline: 30px;
     }
-    .contact-form{
+    .outer-4{
+        padding-inline: 50px;
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-form, .booking-form{
         padding-inline: 30px;
     }
-    .contact-name-email{
+    .contact-name-email, .booking-name-email{
         flex: 100%;
     }
-    .contact-form1{
+    .contact-form1, .booking-form1{
         flex-wrap: wrap;
         gap: 30px;
     }
+    
 }
 @media screen and (max-width: 1080px) {
     .inner-2-1{
@@ -365,6 +453,12 @@ label{
         width: 370px;
         height: 470px;
     }
+    .outer-5{
+        padding-inline: 50px;
+    }
+    .outer-6{
+        padding-inline: 30px;
+    }
 }
 @media screen and (max-width: 1190px) {
     .service{
@@ -372,11 +466,7 @@ label{
         height: 490px;
         transition: all 400ms;
     }
-}
-
-
-
-  
+} 
 @media (max-width: 768px) {
     .hamburger {
       display: block;

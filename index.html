@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Home Page</title>
 </head>
@@ -23,11 +25,11 @@
             <a class="nav-link" href="#.">Footer</a>
         </div>
 
-        <button class="hamburger margin-x">
+        <!-- <button class="hamburger margin-x">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </button>
+        </button> -->
     </nav>
 
     <div class="outer-1">
@@ -107,11 +109,7 @@
     </div>
 
     <div class="outer-4">
-        <svg class="svg-background" width="" height="" viewBox="" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H1440V705L728 605.5L0 705V0Z" fill=""/>
-        </svg>
         <div class="inner-4-1">
-            <div class="contact-form-wrapper" >
                 <h2 class="headings contact-heading">CONTACT US</h2>
                 <h5 class="contact-subhead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>
 
@@ -135,9 +133,70 @@
                         <a class="contact-link" href="#">Send Message</a>
                     </div>
                 </form>
+        </div>
+    </div>
+
+    <footer class="outer-5">
+        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8623238159003!2d-117.28605552428809!3d33.94466897319764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcaf44f3eddbb1%3A0x15c64f872f1b57a9!2s12125%20Day%20St%20STE%20U104%2C%20Moreno%20Valley%2C%20CA%2092557%2C%20USA!5e0!3m2!1sen!2sgh!4v1717184794547!5m2!1sen!2sgh" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="footer-links">
+            <div class="location-name">
+                <i class="faw fa-solid fa-location-dot"></i>
+                <h4>12125 day street Suite U104  Moreno Valley. 92557</h4>
+            </div>
+            <div class="footer-icons">
+                <a href="#">
+                    <i class="faw fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="faw fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="faw fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#">
+                    <i class="faw fa-brands fa-yelp"></i>
+                </a>
+            </div>
+            <div class="footer-email">
+                <i class="faw fa-regular fa-envelope"></i>
+                <h5>support@regigold.com</h5>
             </div>
         </div>
-            
+    </footer>
+
+    <div class="outer-6">
+        <form action="" class="booking-form">
+            <div class="booking-form1">
+                <div class="booking-name-email">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" placeholder="Enter your first name" name="" id="fname">
+                </div>
+                <div class="booking-name-email">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" placeholder="Enter your last name" name="" id="lname">
+                </div>
+            </div>
+            <div class="booking-form1">
+                <div class="booking-name-email">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Enter your email" name="" id="iemail">
+                </div>
+                <div class="booking-name-email">
+                    <label for="pword">Password</label><br>
+                    <input type="password" placeholder="Enter your password" name="" id="pword">
+                </div>
+            </div>
+            <div class="booking-form1">
+                <div class="booking-name-email">
+                    <label for="pnumber">Phone Number</label><br>
+                    <input type="text" placeholder="+44 --- --- ---" name="" id="name">
+                </div>
+                <div class="booking-button">
+                    <input type="submit" value="Book Appointment">
+                </div>
+            </div>
+        </form>
     </div>
 
     <script defer src="./js/nav.js"></script>
