@@ -26,6 +26,7 @@
     box-sizing: border-box;
 }
 
+
 h1,h2,h3,h4,h5,h6{
     font-family: sansation;
 }
@@ -367,13 +368,19 @@ label{
     background-color: rgba(0, 0, 0, 0.404);
     width: 100%;
     height: auto;
-    padding: 150px;
+    padding: 0 150px;
+    z-index: 15;
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    /* opacity: 0; */
 }
 .booking-form{
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 25px 50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
 }
@@ -381,7 +388,7 @@ label{
     width: 100%;
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .booking-name-email{
     flex: 50%;
@@ -413,6 +420,19 @@ label{
     margin-top: 10px;
     outline: 0;
     border: 1px solid #D4D4D4;
+}
+.close-btn{
+    color: red;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.fa-regular{
+    font-size: 30px;
 }
 
 
