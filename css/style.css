@@ -26,11 +26,14 @@
     box-sizing: border-box;
 }
 
-
 h1,h2,h3,h4,h5,h6{
     font-family: sansation;
 }
 
+button{
+    outline: none;
+    border: none;
+}
 
 nav{
     width: 100%;
@@ -374,7 +377,9 @@ label{
     inset: 0;
     display: grid;
     place-items: center;
-    /* opacity: 0; */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
 }
 .booking-form{
     background-color: rgb(255, 255, 255);
@@ -383,6 +388,7 @@ label{
     padding: 25px 50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
+    transform: scale(0);
 }
 .booking-form1{
     width: 100%;
@@ -433,6 +439,18 @@ label{
 }
 .fa-regular{
     font-size: 30px;
+}
+.show-popup{
+    cursor: pointer;
+}
+.popup-active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.outer-6.popup-active .booking-form{
+    transform: scale(1);
+    transition: all 400ms ease;
+    transition-delay: .25s;
 }
 
 

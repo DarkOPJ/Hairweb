@@ -19,10 +19,10 @@
 
         <div class="nav-menu">
             <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="service.html">Our Services</a>
-            <a class="nav-link" href="#.">Contact</a>
-            <a class="nav-link" href="#.">Footer</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#our-services">Our Services</a>
+            <a class="nav-link" href="#contact-us">Contact</a>
+            <a class="nav-link" href="#footer">Footer</a>
         </div>
 
         <button class="hamburger margin-x">
@@ -38,11 +38,11 @@
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when</p>
             <p>looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
             <p>as opposed to using 'Content here, content here', making it look like readable English.</p>
-            <a class="inner-1-btn" href="#">BOOK US NOW</a>
+            <button class="inner-1-btn show-popup">BOOK US NOW</button>
         </div>
     </div>
 
-    <div class="outer-2">
+    <div id="about" class="outer-2">
         <div class="inner-2-1">
             <div class="hair-jacuzzi"></div>
 
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="outer-3">
+    <div id="our-services" class="outer-3">
         <h2 class="headings service-heading">OUR SERVICES</h2>
 
         <div class="inner-3-1">
@@ -65,7 +65,7 @@
 
                     <div class="service-book">
                         <h2>$17.60</h2>
-                        <a class="service-link" href="#">BOOK NOW</a>
+                        <button class="service-link show-popup" >BOOK NOW</button>
                     </div>
                 </div>
             </div>
@@ -77,38 +77,14 @@
 
                     <div class="service-book">
                         <h2>$17.60</h2>
-                        <a class="service-link" href="#">BOOK NOW</a>
-                    </div>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-div1"></div>
-                <div class="service-div2">
-                    <p class="service-text">It is a long established fact that a reader will be distracted
-                        by the readable content of a page when looking at its layout</p>
-
-                    <div class="service-book">
-                        <h2>$17.60</h2>
-                        <a class="service-link" href="#">BOOK NOW</a>
-                    </div>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-div1 sd1-1"></div>
-                <div class="service-div2">
-                    <p class="service-text">It is a long established fact that a reader will be distracted
-                        by the readable content of a page when looking at its layout</p>
-
-                    <div class="service-book">
-                        <h2>$17.60</h2>
-                        <a class="service-link" href="#">BOOK NOW</a>
+                        <button class="service-link show-popup" >BOOK NOW</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="outer-4">
+    <div id="contact-us" class="outer-4">
         <div class="inner-4-1">
                 <h2 class="headings contact-heading">CONTACT US</h2>
                 <h5 class="contact-subhead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>
@@ -136,7 +112,7 @@
         </div>
     </div>
 
-    <footer class="outer-5">
+    <footer id="footer" class="outer-5">
         <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8623238159003!2d-117.28605552428809!3d33.94466897319764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcaf44f3eddbb1%3A0x15c64f872f1b57a9!2s12125%20Day%20St%20STE%20U104%2C%20Moreno%20Valley%2C%20CA%2092557%2C%20USA!5e0!3m2!1sen!2sgh!4v1717184794547!5m2!1sen!2sgh" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="footer-links">
@@ -165,9 +141,9 @@
         </div>
     </footer>
 
-    <div class="outer-6">
+    <div class="outer-6 popup-container">
         <form action="" class="booking-form">
-            <button class="close-btn">
+            <button type="button" class="close-btn">
                 <i class="fa-regular fa-circle-xmark"></i>
             </button>
             <div class="booking-form1">
@@ -204,5 +180,6 @@
 
     <script defer src="./js/nav.js"></script>
     <script defer src="./js/nav-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
 </body>
 </html>
