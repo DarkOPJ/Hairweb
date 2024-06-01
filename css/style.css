@@ -419,35 +419,12 @@ label{
 
 
 /* Media Queries */
-@media screen and (max-width: 700px) {
-    body{
-        width: 100vw;
-    }
-    /* .outer-2, .outer-3{
-        padding-inline: 30px;
-    }
-    .outer-4{
-        padding-inline: 50px;
-        background-size: cover;
-        background-position: center;
-    }
-    .contact-form, .booking-form{
-        padding-inline: 30px;
-    }
-    .contact-name-email, .booking-name-email{
-        flex: 100%;
-    }
-    .contact-form1, .booking-form1{
-        flex-wrap: wrap;
-        gap: 30px;
-    } */
-}
 @media screen and (max-width: 850px) {
     .inner-1 > h1{
         font-size: 50px;
     }
     .outer-2, .outer-3{
-        padding-inline: 30px;
+        padding-inline: 25px;
     }
     .outer-4{
         padding-inline: 50px;
@@ -474,10 +451,10 @@ label{
         height: 470px;
     }
     .outer-5{
-        padding-inline: 50px;
+        padding-inline: 25px;
     }
     .outer-6{
-        padding-inline: 30px;
+        padding-inline: 25px;
     }
 }
 @media screen and (max-width: 1190px) {
